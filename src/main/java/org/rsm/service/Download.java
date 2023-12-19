@@ -37,6 +37,10 @@ public class Download {
     String name;
     List<DownloadInfo> results = new ArrayList<>();
 
+    if (!dir.exists()) {
+      dir.mkdir();
+    }
+
     try {
       for (File file : dir.listFiles()) {
         file.delete();
