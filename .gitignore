@@ -1,0 +1,6 @@
+.idea
+.vs
+target
+*.iml
+*.swp
+download-data/*
